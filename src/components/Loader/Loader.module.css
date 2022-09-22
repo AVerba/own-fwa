@@ -1,0 +1,87 @@
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(146, 148, 146, 0.5);
+  z-index: 5;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 130px;
+  width: 130px;
+  border: 5px solid transparent;
+  border-top-color: #3b622d;
+
+  margin: -65px 0 0 -70px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+.spinner:before,
+.spinner:after {
+  content: '';
+  position: absolute;
+  border: 4px solid transparent;
+  border-radius: 50%;
+}
+
+.spinner:before {
+  border-top-color: #5ac339;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
+  animation: spin 3s linear infinite;
+}
+
+.spinner:after {
+  border-top-color: #a4b158;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mainLoader {
+  to {
+    stroke-dashoffset: 1200;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  fill: none;
+  stroke: rgba(89, 178, 73, 0.8);
+  stroke-width: 4px;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 400;
+  animation-name: mainLoader;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}

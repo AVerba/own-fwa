@@ -1,0 +1,42 @@
+@import '../../globalStyles/vars';
+
+.wrapper {
+  margin: 10px 40px 10px 10px;
+}
+
+.switchBtn {
+  width: 30px;
+  height: 30px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  letter-spacing: 0.04em;
+  color: $emailInModalColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $orangeBasicColor;
+  }
+
+  text-transform: uppercase;
+}
+
+button.switchBtn:disabled{
+  color: $orangeBasicColor;
+  cursor:auto;
+}

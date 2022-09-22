@@ -1,0 +1,51 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: red;
+  // width: 199px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  height: 15px;
+  width: 15px;
+}
+
+.iconSvg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.categoryIcon {
+  fill: currentColor;
+  width: 60px;
+  height: 60px;
+}
+
+.categoryBackgroundActive {
+  display: block;
+
+  width: 59px;
+  height: 46px;
+
+  background: #ffdac0;
+  border-radius: 20px;
+
+  position: absolute;
+  z-index: -1;
+}
+
+.categoryBackground {
+  display: block;
+
+  width: 59px;
+  height: 46px;
+
+  background: #f5f6fb;
+  border-radius: 20px;
+
+  position: absolute;
+  z-index: -1;
+}

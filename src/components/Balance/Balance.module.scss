@@ -1,0 +1,101 @@
+@import "../../globalStyles/vars";
+
+.container {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    position: relative;
+    align-items: baseline;
+  }
+}
+
+.formContainer {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .formContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    width: 704px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .formContainer {
+    width: 1098px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.reportContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .reportContainer {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reportContainer {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.reportSvg{
+  margin-left: 10px;
+  fill: #52555F;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reportLink {
+  margin-top: 47px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Roboto";
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(82, 85, 95, 0.7);
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus{
+    color: $orangeBasicColor;
+    
+    .reportSvg{
+      fill: #FF751D;
+    } 
+  }
+}
+@media screen and (min-width: 768px) {
+  .reportLink {
+    margin:0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reportLink {
+    padding: 0;
+  }
+}

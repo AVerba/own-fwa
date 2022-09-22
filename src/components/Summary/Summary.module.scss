@@ -1,0 +1,73 @@
+.mobContainer {
+  display: none;
+}
+
+.container {
+  font-family: 'Roboto';
+  height: 300px;
+  display: block;
+  background-color: #f5f6fb;
+  margin-top: 40px;
+  border-radius: 20px;
+  width: 230px;
+  
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 148px;
+    right: 32px;
+    width: 250px;
+  }
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 15px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  background-color: #f4f6fb;
+  border-bottom: 1px solid white;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.firstMessage{
+  text-align: center;
+  font-weight: 500;
+  padding: 100px 20px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  background-color: #f4f6fb;
+  border:none;
+}
+
+.noTransactions{
+  text-align: center;
+  font-weight: 400;
+  padding: 15px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  background-color: #f4f6fb;
+  border: none;
+}
+
+.list {
+  background-color: #f4f6fb;
+}
+
+.list:last-child {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid white;
+}
+

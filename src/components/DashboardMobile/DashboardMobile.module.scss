@@ -1,0 +1,40 @@
+@import "../../globalStyles/vars";
+
+.container {
+    width: 320px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.controls{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+}
+
+.transaction_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.calendar_wrapper{
+    margin-top: 40px;
+}
+
+.button_back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+}

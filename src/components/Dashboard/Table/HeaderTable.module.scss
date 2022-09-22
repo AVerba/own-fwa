@@ -1,0 +1,101 @@
+@import '../../../globalStyles/vars';
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $blackColor;
+  background-color: $grayBackgroundColor;
+
+  box-sizing: border-box;
+  @media screen and (min-width: 768px) {
+    width: 624px;
+    margin-top: 48px;
+    padding-left: 22px;
+    padding-right: 90px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 746px;
+    margin-top: 62px;
+    padding-left: 26px;
+    padding-right: 92px;
+  }
+}
+
+.date_wrapper{
+  @media screen and (min-width: 768px) {
+    width: 109px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 114px;
+  }
+}
+.description_wrapper{
+  @media screen and (min-width: 768px) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {}
+}
+
+.category_wrapper {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    width: 146px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    margin-left: 54px;
+    width: 176px;
+  }
+}
+
+.sum_wrapper{
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (min-width: 768px) {  
+    width: 90px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    width: 140px;
+  }
+}
+
+.date,
+.description,
+.category,
+.sum {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 10px 0;
+  cursor: pointer;
+
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    color: $orangeBasicColor;
+  }
+}
+
+.sort_icon{
+  margin-bottom: 2px;
+  margin-left: 5px;
+  fill: currentColor;
+}

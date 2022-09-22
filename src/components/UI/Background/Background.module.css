@@ -1,0 +1,22 @@
+.mobile {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 280px;
+  background-color: #f4f6fb;
+  border: 1px solid transparent;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tablet {
+  composes: mobile;
+  height: 527px;
+}
+
+.desktop {
+  composes: tablet;
+  flex-direction: row;
+}

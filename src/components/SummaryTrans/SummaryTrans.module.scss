@@ -1,0 +1,59 @@
+@import '../../globalStyles/vars';
+
+.container {
+  display: block;
+  width: 230px;
+  margin: 40px 0 0 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $blackColor;
+}
+
+.none {
+  display: none;
+}
+
+.titleBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grayBackgroundColor;
+  border-radius: 20px 20px 0 0;
+  width: 230px;
+  height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+.list {
+  margin-top: 2px;
+  min-height: 231px;
+  background-color: $grayBackgroundColor;
+  border-radius: 0 0 20px 0;
+}
+
+.monthPoint {
+  display: flex;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 22px;
+  justify-content: space-between;
+  background-color: $grayBackgroundColor;
+  margin-top: 2px;
+}
+.monthPoint:last-child {
+  border-radius: 0 0 20px 0;
+}
+
+.monthPointText {
+  font-weight: 400;
+  color: $basicTextColor;
+}

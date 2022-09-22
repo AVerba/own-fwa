@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+}
+
+.imageContainer {
+  position: absolute;
+
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.backgroundContainer {
+  position: absolute;
+  z-index: -2;
+
+  width: 100%;
+}
+.contentMobile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contentTablet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contentDesktop {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1279px;
+  margin: 0 auto;
+}

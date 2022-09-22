@@ -1,0 +1,51 @@
+@import "../../globalStyles/vars";
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding: 0 30px 50px 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        padding: 0 91px 91px 91px;
+    }
+}
+
+.dashboard{
+    position: relative;
+    z-index: 2;
+}
+
+.board{
+    height: 580px;
+    padding: 32px 32px 60px 32px;
+    background-color: $whiteColor;
+    border-radius: 0 30px 30px 30px;
+    box-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
+    box-sizing: border-box;
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        height: 620px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1098px;
+        height: 580px;
+    }
+}
+
+.controls{
+    display: flex;
+    margin-top: 35px;
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 10px;
+    }
+}

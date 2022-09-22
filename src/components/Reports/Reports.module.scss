@@ -1,0 +1,252 @@
+.financeWrapper {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin-bottom: 32px;
+  padding: 22px 13px;
+
+  background-color: #ffffff;
+  box-shadow: 5px 10px 20px rgba(170, 178, 197, 0.4);
+  border-radius: 20px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    padding: 25px;
+  }
+}
+
+.expensesWrapper,
+.incomesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.financeTitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #52555f;
+  margin-bottom: 5px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+.expenses {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #e53935;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.incomes {
+  @extend .expenses;
+  color: #407946;
+}
+
+.divider {
+  border: 1px solid #e0e5eb;
+  margin: -15px 0;
+
+  @media screen and (min-width: 768px) {
+    margin: -10px 20px;
+  }
+}
+
+.switchWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 160px;
+
+  @media screen and (min-width: 768px) {
+    padding: 20px 40px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 20px 200px;
+  }
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 160px;
+}
+
+.switchBtn {
+  width: 30px;
+  height: 30px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+
+  border-radius: 4px;
+  border: none;
+  background-color: transparent;
+}
+
+.switchTitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 35px;
+  }
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.categoryBtn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: transparent;
+  color: #071f41;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.categoryBtnActive {
+  @extend .categoryBtn;
+  color: #ff751d;
+}
+
+.categoryValue {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #52555f;
+  margin-bottom: 5px;
+}
+
+.categoryName {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #52555f;
+  margin-top: 5px;
+}
+
+.categoryIcon {
+  fill: currentColor;
+  width: 60px;
+  height: 60px;
+}
+
+.categoryBackground {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 59px;
+  height: 46px;
+  background: #f5f6fb;
+  border-radius: 20px;
+}
+
+.categoryBackgroundActive {
+  @extend .categoryBackground;
+  background: #ffdac0;
+}
+
+.error,
+.loading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #52555f;
+
+  margin-top: 30px;
+}
+
+.chartsWrapper {
+  margin-top: -50px;
+
+  @media screen and (max-width: 440px) {
+    height: 450px;
+  }
+
+  @media screen and (min-width: 441px) and (max-width: 539px) {
+    height: 500px;
+  }
+
+  @media screen and (min-width: 540px) and (max-width: 767px) {
+    margin-top: -65px;
+    height: 600px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    padding: 20px 0;
+    margin: 40px 0;
+
+    background-color: #ffffff;
+    box-shadow: 0px 10px 60px rgba(170, 178, 197, 0.2);
+    border-radius: 30px;
+  }
+
+  @media screen and (min-width: 1340px) {
+    height: 550px;
+  }
+}

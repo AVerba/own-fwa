@@ -1,0 +1,76 @@
+@import '../../globalStyles/vars';
+
+.topTextMobile {
+  width: 250px;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 11px;
+  padding-top: 34px;
+  padding-bottom: 24px;
+  font-family: "Roboto";
+  color: rgb(82, 85, 95);
+}
+
+.topTextDefault {
+  composes: topTextMobile;
+  width: 280px;
+  padding-top: 52px;
+  font-size: 13px;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.bottomTextMobile {
+  composes: topTextMobile;
+  padding-bottom: 0;
+  width: 274px;
+  text-align: left;
+}
+
+.bottomTextDefault {
+  composes: topTextDefault;
+  padding-top: 26px;
+}
+
+.button {
+  width: 119px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50px;
+  border: solid 2px rgb(245, 247, 250);
+  box-shadow: 1px 1.732px 3px 0px rgba(170, 178, 197, 0.29);
+  background-color: rgb(245, 247, 250);
+  transition: all 0.3s linear;
+}
+
+.button:hover {
+  border: 2px rgb(244, 246, 251) solid;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s linear;
+}
+.container {
+  text-decoration: none;
+  width: 74px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnImg {
+  width: 24px;
+  height: 24px;
+  background-image: url("./img/googleImg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btnLabel {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  line-height: 1.643;
+  text-align: left;
+}

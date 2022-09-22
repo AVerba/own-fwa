@@ -1,0 +1,62 @@
+.deskTop {
+  z-index: 4;
+  opacity: 0.9;
+  min-height: 232px;
+  margin: 28px 0 0 10px;
+  background: url('img/topDeskImp.png');
+}
+.deskTopLogin {
+  margin-top: -183px;
+  opacity: 0.9;
+  min-height: 232px;
+  background: url('img/topDeskImp.png');
+}
+.deskBottom {
+  z-index: 20;
+  min-height: 150px;
+
+  margin: 450px 0 50px 20%;
+  background: url('./img/bottomDeskImp.png');
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+
+.tabletTop {
+  z-index: 4;
+  opacity: 0.9;
+  min-height: 232px;
+  margin: 28px 0 0 10px;
+  background: url('img/topDeskImp.png');
+}
+.tabletBottom {
+  z-index: 20;
+  min-height: 150px;
+  margin: 602px 0 50px 230px;
+  background: url('./img/bottomDeskImp.png');
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+.mobTop {
+  z-index: 4;
+  opacity: 0.9;
+  min-height: 232px;
+  margin: 28px 0 0 10px;
+  background: url('img/topDeskImp.png');
+}
+.deskBottomLogin {
+  position: absolute;
+  top: 100%;
+  z-index: 40;
+  background: url('img/topDeskImp.png');
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}
+.tableBottomLogin {
+  z-index: 20;
+  min-height: 150px;
+  margin: -233px 0 0 65%;
+
+  background: url('./img/bottomDeskImp.png');
+  opacity: 0.9;
+  background-repeat: no-repeat;
+}

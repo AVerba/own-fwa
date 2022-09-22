@@ -1,0 +1,29 @@
+.button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 13px;
+  color: rgb(82, 85, 95);
+  background-color: transparent;
+}
+.btnIcon {
+  height: 16px;
+  width: 16px;
+  fill: #cbcccf;
+}
+.label {
+  position: relative;
+  display: block;
+}
+.text:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 35px;
+  background-color: #e0e5eb;
+  position: absolute;
+  left: -18px;
+  top: -8px;
+}
